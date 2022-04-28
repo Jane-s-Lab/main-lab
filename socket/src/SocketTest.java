@@ -13,6 +13,7 @@ public class SocketTest {
 
 	@SuppressWarnings("InfiniteLoopStatement")
 	public static void main(String[] args) throws IOException {
+		// TODO: Leader/Followers, Worker Thread
 		try (ServerSocket serverSocket = new ServerSocket(DEFAULT_PORT)) {
 			while (true) {
 				Socket socket = serverSocket.accept();
